@@ -5,12 +5,16 @@
 local M = {}
 
 M.ui = {
-	theme = "onedark",
+    theme = "github_dark",
+    transparency = true,
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+    statusline = {
+        theme = "vscode_colored",
+    },
+
+    nvdash = {
+        load_on_startup = true,
+    }
 }
 
 return M
