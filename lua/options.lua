@@ -2,5 +2,23 @@ require "nvchad.options"
 
 -- add yours here!
 
--- local o = vim.o
--- o.cursorlineopt ='both' -- to enable cursorline!
+local opt = vim.opt
+
+-- Global options
+opt.relativenumber = true
+opt.cursorlineopt = 'both'
+
+-- Default tab size to 4
+opt.shiftwidth = 4
+opt.tabstop = 4
+opt.softtabstop = 4
+
+-- Specific file types with different tab size
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "javascript", "python", "html" },
+    callback = function ()
+        vim.opt_local.shiftwidth = 2
+        vim.opt_local.tabstop = 2
+        vim.opt_local.softtabstop = 2
+    end
+})
