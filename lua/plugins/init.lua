@@ -42,7 +42,7 @@ return {
             ensure_installed = {
                 "vim", "lua", "vimdoc",
                 "html", "css",
-                "javascript", "typescript",
+                "javascript", "typescript", "tsx",
                 "c", "cpp",
                 "c_sharp",
                 "python", "htmldjango",
