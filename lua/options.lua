@@ -15,7 +15,7 @@ opt.softtabstop = 4
 
 -- Specific file types with different tab size
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = { "javascript", "python", "html" },
+    pattern = { "javascript", "typescript", "html", "css" },
     callback = function ()
         vim.opt_local.shiftwidth = 2
         vim.opt_local.tabstop = 2
