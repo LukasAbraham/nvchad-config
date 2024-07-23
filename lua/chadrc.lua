@@ -6,7 +6,7 @@ local M = {}
 
 M.ui = {
     theme = "github_dark",
-    transparency = true,
+    transparency = false,
 
     statusline = {
         theme = "vscode_colored",
