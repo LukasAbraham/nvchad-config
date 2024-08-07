@@ -4,7 +4,6 @@ local utils = require("configs.utils")
 local map = vim.keymap.set
 
 map("i", "jk", "<ESC>")
-map("i", "kj", "<ESC>")
 
 map("n", "<C-d>", "<C-d>zz", { desc = "Scroll half page down" })
 map("n", "<C-u>", "<C-u>zz", { desc = "Scroll half page up" })

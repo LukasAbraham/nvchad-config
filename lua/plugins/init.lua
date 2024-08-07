@@ -53,6 +53,7 @@ return {
             },
             indent = {
                 enable = true,
+                disable = { "tsx" },
             },
         },
     },
