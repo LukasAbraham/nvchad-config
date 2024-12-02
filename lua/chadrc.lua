@@ -4,17 +4,31 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.ui = {
-    theme = "github_dark",
+M.base46 = {
+    theme = "dark_horizon",
     transparency = false,
+}
+
+M.ui = {
+    cmp = {
+        icons_left = true,
+        format_colors = {
+            tailwind = true,
+        },
+    },
 
     statusline = {
+        enabled = true,
         theme = "vscode_colored",
     },
 
-    nvdash = {
-        load_on_startup = true,
-    }
+    telescope = {
+        style = "bordered",
+    },
+}
+
+M.nvdash = {
+    load_on_startup = true,
 }
 
 return M

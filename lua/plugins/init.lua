@@ -7,7 +7,6 @@ return {
         end,
     },
 
-    -- These are some examples, uncomment them if you want to see them work!
     {
         "neovim/nvim-lspconfig",
         config = function()
@@ -32,6 +31,7 @@ return {
                 "json-lsp",                   -- JSON
                 "yaml-language-server",       -- YAML
                 "marksman",                   -- Markdown
+                "jdtls",                      -- Java
             },
         },
     },
@@ -43,10 +43,14 @@ return {
                 "vim", "lua", "vimdoc",
                 "html", "css",
                 "javascript", "typescript", "tsx",
+                "json",
                 "c", "cpp",
                 "c_sharp",
                 "python", "htmldjango",
+                "java",
                 "markdown",
+                "regex",
+                "sql",
             },
             highlight = {
                 enable = true,
