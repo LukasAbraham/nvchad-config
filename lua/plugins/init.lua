@@ -91,4 +91,9 @@ return {
             require("nvim-ts-autotag").setup()
         end,
     },
+
+    {
+        "nvim-treesitter/nvim-treesitter-context",
+        event = "VeryLazy",
+    },
 }
